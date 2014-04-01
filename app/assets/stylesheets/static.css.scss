@@ -1,3 +1,24 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.jumbotron {
+	background-color: #545454;
+}
+
+.jumbotron a{
+	color: lightblue;
+	margin: 10px;
+}
+
+.about {
+	font-size: 120%;
+	font-family: Arial;
+}
+
+.about span {
+	margin: 150px;
+}
+
+
