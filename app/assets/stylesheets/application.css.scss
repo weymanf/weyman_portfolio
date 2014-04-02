@@ -13,3 +13,19 @@
  */
 
 @import "bootstrap";
+
+
+
+
+body { 
+    background: image_url('back.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+}
+
+.container {
+	padding: 50px;
+	background-color: white;
+	opacity: 0.8;
+}
