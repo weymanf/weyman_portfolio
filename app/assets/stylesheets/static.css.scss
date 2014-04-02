@@ -3,6 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+.logo span {
+	padding-top: 50px;
+	margin-left: 20px;
+	color: white;
+	font-size: 150%;
+}
+
+
 .jumbotron {
 	background-color: #545454;
 }
@@ -20,5 +28,4 @@
 .about span {
 	margin: 150px;
 }
-
 
