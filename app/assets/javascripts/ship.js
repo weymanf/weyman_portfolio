@@ -55,4 +55,4 @@ Ship.RADIUS = 7
 Ship.COLOR = "#DD7ED8"
 Ship.MAXSPEED = 6
 
-})(this);
+})(window);

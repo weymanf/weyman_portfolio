@@ -54,4 +54,4 @@
       this.pos[1] += dimY
   }
 
-})(this);
+})(window);

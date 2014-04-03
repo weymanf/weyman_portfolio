@@ -44,4 +44,4 @@
   Asteroid.MAXRADIUS = 25
   Asteroid.MAXSPEED = 7
 
-})(this);
+})(window);

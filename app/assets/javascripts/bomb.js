@@ -26,4 +26,4 @@
 
   Bomb.MAXRADIUS = 400
 
-})(this);
+})(window);
