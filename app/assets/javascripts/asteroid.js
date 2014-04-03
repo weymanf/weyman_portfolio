@@ -32,7 +32,7 @@
     if (Math.random() * 2 > 1)
       dy = -dy
 
-    return [dx, dy]
+    return [dx, dy];
   };
 
   Asteroid.randomRadius = function() {
