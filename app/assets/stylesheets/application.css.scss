@@ -29,3 +29,13 @@ body {
 	background-color: white;
 	opacity: 0.95;
 }
+
+.asteroids-back {
+	background: image_url('space.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}

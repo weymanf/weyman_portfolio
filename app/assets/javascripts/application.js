@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require moving_object.js
+//= require inherit.js
+//= require asteroid.js
+//= require ship.js
+//= require game.js
+//= require bullet.js
+//= require bomb.js
+//= require keymaster.js
+
