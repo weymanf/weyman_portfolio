@@ -37,7 +37,7 @@
 
   Asteroid.randomRadius = function() {
     return (Math.random() * Asteroid.MAXRADIUS + 10);
-  }
+  };
 
 
   Asteroid.COLOR = ["#2F00AB", "#FFF000", "#00E995"];
