@@ -94,6 +94,10 @@
     }
   }
 
+  $(".restart-as").click(function(){
+      this.stop();  
+  });
+
   Game.prototype.stop = function() {
     clearInterval(this.intervalID)
   }
