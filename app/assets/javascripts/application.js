@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require underscore.js
 //= require moving_object.js
 //= require inherit.js
 //= require asteroid.js
@@ -21,4 +22,5 @@
 //= require bullet.js
 //= require bomb.js
 //= require keymaster.js
-
+//= require snake.js
+//= require snake_ui.js

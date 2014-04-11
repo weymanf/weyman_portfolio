@@ -1,0 +1,27 @@
+.cell {
+  float: left;
+  height: 20px;
+  width: 20px;
+  background: black;
+  opacity: 1;
+
+}
+
+.snake {
+  background-color: pink;
+  opacity: 0.6;
+}
+
+.apple {
+  background-color: red;
+}
+
+.row {
+  clear: both;
+}
+
+
+#grid {
+	margin: 0 auto;
+	width: 50%;
+}

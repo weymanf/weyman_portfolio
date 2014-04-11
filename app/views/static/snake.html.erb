@@ -1,11 +1,22 @@
 <h3> Snake </h3>
+    <p> W A S D to move. <button class="restart-sn">New Game</button> </p>
+    <br>
+    
+<div id="grid"></div>
 
+<br>
+check out the code here <a href="https://github.com/weymanf/asteroid-js">Snake code</a>
+
+
+<script>
+      $(function () { new SG.View($("#grid")).start(); });
+</script>
 
 
 
 <script>
 
- $(".restart").click(function(){
+ $(".restart-sn").click(function(){
             window.location.reload()   
         });
 
