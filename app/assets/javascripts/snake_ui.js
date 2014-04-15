@@ -21,7 +21,7 @@
     37: "W"
   };
 
-  View.STEP_MILLIS = 90;
+  View.STEP_MILLIS = 85;
 
   View.prototype.handleKeyEvent = function (event) {
     if(key.isPressed("s"))
