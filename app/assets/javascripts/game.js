@@ -89,7 +89,7 @@
     for(var i = 0; i < this.asteroids.length; i++) {
       if(this.asteroids[i].isCollidedWith(this.ship)) {
         this.stop();
-        alert("You dun goofed");
+        $(".loser").append("<h2> You Lose </h2>")
       }
     }
   }

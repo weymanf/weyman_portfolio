@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 	<a name="top"></a>
@@ -14,11 +15,19 @@
 		<div class="logo">
 		<%= link_to image_tag("weyman_logo.png"), home_url %> <span class="top"> Web Developer </span>
 		</div>
-		<a href="http://github.com/weymanf"> Github </a>
-		<a href="http://www.linkedin.com/pub/weyman-fung/75/173/626">Linkedin</a>
-		<%= link_to "Asteroids", asteroids_url %>
-		<%= link_to "Snake", snake_url %>
-		<%= link_to "Resume", "fung_resume.pdf" %>
+		<a href="http://github.com/weymanf"><%= image_tag("github.png") %></a>
+		<a href="http://www.linkedin.com/pub/weyman-fung/75/173/626"><%= image_tag("linked.png") %></a>
+		<div class="btn-group games">
+  			<a class="btn dropdown-toggle games" data-toggle="dropdown">
+    		Game Portal
+    		<span class="caret"></span>
+ 			</a>
+  		<ul class="dropdown-menu">
+    		<li><%= link_to "Asteroids", asteroids_url %>
+			<li><%= link_to "Snake", snake_url %>
+  		</ul>
+		</div>
+		
 	</div>
 
 

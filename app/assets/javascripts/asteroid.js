@@ -42,6 +42,6 @@
 
   Asteroid.COLOR = ["#2F00AB", "#FFF000", "#00E995"];
   Asteroid.MAXRADIUS = 25;
-  Asteroid.MAXSPEED = 7;
+  Asteroid.MAXSPEED = 6;
 
 })(this);
