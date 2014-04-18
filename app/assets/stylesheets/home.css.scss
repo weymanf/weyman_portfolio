@@ -4,6 +4,7 @@
        -o-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
           transition: all 0.5s ease;
+          position: top;
           height: 300px;
           width: 300px;
 }
@@ -14,6 +15,9 @@
        -o-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
-          background-color: white;
-          opacity: 0.9;
+          background-color: green;
+          opacity: 0.7;
 }
+
+
+
