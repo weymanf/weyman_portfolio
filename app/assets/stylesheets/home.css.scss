@@ -15,9 +15,16 @@
        -o-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
-          background-color: green;
           opacity: 0.7;
 }
 
 
+.pros div {
+  height: 370px;
+}
+
+.des {
+  font-size: large;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
