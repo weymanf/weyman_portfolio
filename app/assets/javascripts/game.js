@@ -10,6 +10,7 @@
     this.bullets = [];
     this.bomb = null;
     this.score = 0;
+    this.stage = 1;
   }
 
 
@@ -70,14 +71,24 @@
     this.move();
     this.draw();
     this.checkCollisions();
+
+    if (this.asteroids.length === 0) {
+      this.stage += 1;
+      this.addAsteroids(8 * this.stage);
+    }
   };
 
 
   Game.prototype.start = function() {
     var that = this
 
-    this.addAsteroids(20);
+    this.addAsteroids(10);
     this.intervalID = setInterval(function() { that.step() }, Game.FPS);
+    this.stop();
+    $(".game-go").click(function(){
+            that.intervalID = setInterval(function() { that.step() }, Game.FPS);
+            $(".game-go").css("display", "none") 
+        });
   }
 
   Game.DIM_X = 900
@@ -158,6 +169,9 @@
 
     text = "Bomb: " + this.ship.bombs
     this.ctx.fillText(text, 800, 50)
+
+    text = "Stage: " + this.stage
+    this.ctx.fillText(text, 400, 50)
   }
 
 

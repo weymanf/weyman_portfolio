@@ -1,14 +1,15 @@
 
 
 
-<h3> ASTEROIDS </h3>
+<h3> ASTEROIDS <button class="game-go btn btn-primary">Start Game</button></h3>
+
 <div class="asteroids-back">
 <canvas width="900" height="600"></canvas>
   </div>
   <div class="loser">
   </div>
   <br>
-    <p> W A S D to move. F to fire. T to spawn asteroids. B to drop a bomb. <button class="restart-as">New Game</button> </p>
+    <p> W A S D to move. F to fire. T to spawn asteroids. B to drop a bomb. <button class="restart-as btn btn-success">New Game</button> </p>
     <br>
     check out the code here <a href="https://github.com/weymanf/asteroid-js">asteroids code</a>
 
@@ -19,7 +20,7 @@
       img.onload = function () {
             ctx.drawImage(img, 0, 0);
         }
-        // img.src = '../../assets/images/space.jpg';
+        img.src = 'assets/space.jpg';
         var asteroid = new Asteroids.Game(ctx);
         asteroid.start();
 
