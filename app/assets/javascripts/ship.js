@@ -55,4 +55,47 @@ Ship.RADIUS = 7
 Ship.COLOR = "#DD7ED8"
 Ship.MAXSPEED = 6
 
+Ship.prototype.draw = function(ctx) { 
+var p1x = this.radius * Math.sin(this.rotation)*1.6; 
+var p1y = this.radius * Math.cos(this.rotation)*1.6; 
+
+var p2x = this.radius * Math.sin(this.rotation + 120 * (Math.PI / 180) )*1; 
+var p2y = this.radius * Math.cos(this.rotation + 120 * (Math.PI / 180) )*1; 
+
+var p3x = this.radius * Math.sin(this.rotation + 240 * (Math.PI / 180) )*1; 
+var p3y = this.radius * Math.cos(this.rotation + 240 * (Math.PI / 180) )*1; 
+
+ctx.fillStyle = this.color; 
+ctx.beginPath(); 
+ctx.moveTo(this.posx + p1x, this.posy + p1y); 
+ctx.lineTo(this.posx + p2x, this.posy + p2y); 
+ctx.lineTo(this.posx + p3x, this.posy + p3y); 
+ctx.closePath(); 
+ctx.fill(); 
+
+ctx.fillStyle = this.color; 
+ctx.beginPath(); 
+ctx.arc( 
+this.posx + p2x, 
+this.posy + p2y, 
+this.radius / 3, 
+0, 
+2 * Math.PI, 
+false 
+); 
+ctx.fill(); 
+
+ctx.fillStyle = Ship.COLOR; 
+ctx.beginPath(); 
+ctx.arc( 
+this.posx + p3x, 
+this.posy + p3y, 
+this.radius / 3, 
+0, 
+2 * Math.PI, 
+false 
+); 
+ctx.fill(); 
+} 
+
 })(window);
