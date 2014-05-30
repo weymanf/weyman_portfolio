@@ -85,4 +85,14 @@
   animation-iteration-count: 1;
 }
 
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: #f00;
+  background-color: #f00;
+
+  border: none !important;
+  border-top: dashed 2px #BCAEAD !important;
+}
 

@@ -1,5 +1,8 @@
-<h3> Snake </h3>
-    <p> W A S D to move. <button class="restart-sn">New Game</button> </p>
+<h3> Snake </h3>    
+Get Ready. It's pretty fast. <span class="count-down"></span>
+	<br>
+	<br>
+    <p> Up Down Left Right to move. <button class="restart-sn">New Game</button> </p>
     <br>
     
 <div id="grid"></div>
@@ -19,5 +22,7 @@ check out the code here <a href="https://github.com/weymanf/asteroid-js">Snake c
  $(".restart-sn").click(function(){
             window.location.reload()   
         });
+
+  window.addEventListener("keydown", arrow_keys_handler, false);
 
 </script>

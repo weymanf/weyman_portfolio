@@ -9,11 +9,17 @@
   <div class="loser">
   </div>
   <br>
-    <p> W A S D to move. F to fire. T to spawn asteroids. B to drop a bomb. <button class="restart-as btn btn-success">New Game</button> </p>
+    <p> Up Down Left Right to move. Space to fire. T to spawn asteroids. B to drop a bomb. <button class="restart-as btn btn-success">New Game</button> </p>
     <br>
     check out the code here <a href="https://github.com/weymanf/asteroid-js">asteroids code</a>
 
  <script>
+
+
+    window.addEventListener("keydown", arrow_keys_handler, false);
+
+    
+  
       var canvas = document.getElementsByTagName("canvas")[0];
       var ctx = canvas.getContext("2d")
       var img = new Image();
@@ -27,7 +33,7 @@
 
 
         $(".restart-as").click(function(){
-            window.location.reload()   
+            window.location.reload()  
         });
 
 </script>

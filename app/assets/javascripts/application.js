@@ -24,3 +24,14 @@
 //= require keymaster.js
 //= require snake.js
 //= require snake_ui.js
+
+
+var arrow_keys_handler = function(e) {
+  switch(e.keyCode){
+        case 37: case 39: case 38:  case 40: // Arrow keys
+        case 32: e.preventDefault(); break; // Space
+        default: break; // do not block other keys
+      }
+    };
+
+

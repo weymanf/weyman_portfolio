@@ -24,13 +24,13 @@
   View.STEP_MILLIS = 85;
 
   View.prototype.handleKeyEvent = function (event) {
-    if(key.isPressed("s"))
+    if(key.isPressed("down"))
       this.board.snake.turn("S");
-    if(key.isPressed("w"))
+    if(key.isPressed("up"))
       this.board.snake.turn("N");
-    if(key.isPressed("a"))
+    if(key.isPressed("left"))
       this.board.snake.turn("W");
-    if(key.isPressed("d"))
+    if(key.isPressed("right"))
       this.board.snake.turn("E");
     if (_(View.KEYS).has(event.keyCode)) {
       this.board.snake.turn(View.KEYS[event.keyCode]);
@@ -94,12 +94,51 @@
 
   View.prototype.start = function () {
     this.board = new SG.Board(20);
-
+    var that = this;
     $(window).keydown(this.handleKeyEvent.bind(this));
+
+
 
     this.intervalId = window.setInterval(
       this.step.bind(this),
       View.STEP_MILLIS
       );
+    
+    setTimeout( function () {
+       window.clearInterval(that.intervalId); 
+    }, 150)
+
+    count = 3
+    
+    var counter = setInterval(timer, 1000);
+
+    function timer() {
+      $(".count-down").append(count + " ")
+      count = count - 1
+      if (count === 0) {
+       
+        window.clearInterval(counter);
+      }
+    }
+
+
+    setTimeout( function () {
+       $(".count-down").html("GO!");
+      that.intervalId = window.setInterval(
+      that.step.bind(that),
+      View.STEP_MILLIS
+      );
+    }, 4000)
+
+
+
+
+
+
   };
+
+
+  
+
+
 })(this);

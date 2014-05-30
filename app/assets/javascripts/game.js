@@ -117,19 +117,19 @@
     var x = 0
     var y = 0
 
-    if(key.isPressed("s"))
+    if(key.isPressed("down"))
       y += Game.SPEED;
-    if(key.isPressed("w"))
+    if(key.isPressed("up"))
       y -= Game.SPEED;
-    if(key.isPressed("a"))
+    if(key.isPressed("left"))
       x -= Game.SPEED;
-    if(key.isPressed("d"))
+    if(key.isPressed("right"))
       x += Game.SPEED;
 
 
     this.ship.power([x,y])
 
-    if(key.isPressed("f"))
+    if(key.isPressed("space"))
       this.fireBullet();
 
     if(key.isPressed("b"))
