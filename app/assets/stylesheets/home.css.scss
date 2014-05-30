@@ -96,3 +96,22 @@ hr {
   border-top: dashed 2px #BCAEAD !important;
 }
 
+.about h2 {
+  text-align: center;
+}
+
+
+
+.circular {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: image_url('snow.jpg') no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  }
+
