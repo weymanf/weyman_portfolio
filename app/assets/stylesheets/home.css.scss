@@ -89,11 +89,10 @@ hr {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  color: #f00;
-  background-color: #f00;
+  background-color: grey;
+  height: 1px;
+  opacity: 40%;
 
-  border: none !important;
-  border-top: dashed 2px #BCAEAD !important;
 }
 
 .about h2 {
