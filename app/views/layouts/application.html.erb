@@ -14,11 +14,11 @@
 	
 	<div class="jumbotron">
 		<div class="logo">
-		<%= link_to image_tag("weyman_logo.png"), home_url %> <span class="top"> Web Developer </span>
+		<%= link_to image_tag("weyman_logo.png"), home_url %>
 		</div>
-		<a href="http://github.com/weymanf"><%= image_tag("github.png") %></a>
-		<a href="http://www.linkedin.com/pub/weyman-fung/75/173/626"><%= image_tag("linked.png") %></a>
-		<%= link_to image_tag("resume.png"), "fung_resume.pdf" %>
+		<a href="http://github.com/weymanf" class="pop"><%= image_tag("github.png") %></a>
+		<a href="http://www.linkedin.com/pub/weyman-fung/75/173/626" class="pop"><%= image_tag("linked.png") %></a>
+		<%= link_to image_tag("resume.png"), "fung_resume.pdf", :class => "pop" %>
 		<div class="btn-group games">
   			<a class="btn dropdown-toggle games" data-toggle="dropdown">
     		Game Portal

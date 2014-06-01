@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -15,7 +16,7 @@
 @import "bootstrap";
 
 .jumbotron {
-	height: 200px;
+	
 	padding-bottom: 0;
 	margin-bottom: 0;
 
@@ -58,6 +59,7 @@ body {
 .about {
 	background: image_url('back_maybe.jpg');
 	background-repeat:no-repeat;
+	background-size: cover;
 	background-attachment:fixed;
 	background-position:center; 
 	padding-top: 20px;
@@ -65,9 +67,9 @@ body {
 }
 
 .logo {
-	margin-left: 35%;
-	
-}
+	display: table;
+    margin: 0 auto;
+    }
 
 
 .me {
