@@ -34,8 +34,8 @@
 
 .heads h4 {
   font-weight: bold;
-  color: #800000;
-  font-size: 20px;
+  color: #332236;
+  font-size: 30px;
 }
 
 .language {
@@ -114,3 +114,31 @@ hr {
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8); background-size: cover;
   }
 
+.skill-pics {
+    display: table;
+    margin: 0 auto;
+}
+
+
+
+.tilt img {
+  height: 333px;
+  width: 333px;
+}
+
+.pros {
+  margin-left: 20%;
+}
+
+.des {
+  width: 30%;
+}
+
+.projects {
+  background-color: #f0f4f4;
+  margin: 0;
+}
+
+.projects p {
+  text-align: center;
+}
