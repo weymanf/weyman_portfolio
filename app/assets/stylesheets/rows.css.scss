@@ -3,6 +3,17 @@
 	text-align: center;	
 }
 
+.pro-text {
+	width: 400px;
+	display: inline-table;
+	height: 100%;
+}
+
+.row {
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+}
 
 .tilt img {
 	width: 330px;
