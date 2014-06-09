@@ -16,7 +16,12 @@
 @import "bootstrap";
 
 .jumbotron {
-	
+
+	background: image_url('animate.gif') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	padding-bottom: 0;
 	margin-bottom: 0;
 
