@@ -199,9 +199,27 @@
 	</div>
 
 
-	<div>
-
+	<div class="last">
 		
+			<div class="heads"><h4 class="pop"> Me Elsewhere </h4></div>
+		
+			<div class="contax">I'm situated right here in the Bay Area so feel free to contact at me!
+				<ul>
+				 	<li>Phone → 510-213-9103</li>
+				
+				 <li> Email → <a href="mailto:wfung@ucdavis.edu?subject=Hello" style="color: #6F6F6F">wfung@ucdavis.edu</a> </li>
+				
+				<li>Linkedin → <a href="http://www.linkedin.com/pub/weyman-fung/75/173/626" style="color: #6F6F6F">In</a>  </li>
+				
+				<li>Github → <a href="http://www.github.com/weymanf" style="color: #6F6F6F">weymanf</a> </li>
+
+				<li>Resume → <a href="fung_resume.pdf" style="color: #6F6F6F">pdf</a> </li>
+			</ul>
+ 
+
+			</div>
+
+
 
 
 	</div>
@@ -213,6 +231,21 @@
   window.onunload = function(){};
 	window.removeEventListener("keydown", arrow_keys_handler, false);
 
+
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
   
 
 
